@@ -1,0 +1,107 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 32px;
+  padding: 32px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-image: url('/image/bg3.jpg');
+  background-color: rgba(22, 21, 49, 0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-blend-mode: darken;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 12px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  text-shadow: 0 0 7px rgba(222, 240, 252, 0.681);
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.338);
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.338);
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px 24px;
+  font-size: 16px;
+  margin: 18px;
+  cursor: pointer;
+  background-color: rgba(14, 13, 20, 0.5);
+  color: rgb(246, 246, 246);
+  border-color: rgb(214, 213, 219);
+  border-width: 2px;
+  border-radius: 20px;
+}
+
+.spell-cards {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgba(14, 13, 20, 0.5);
+  color: rgb(246, 246, 246);
+  border-color: rgb(171, 168, 183);
+  border: 2px;
+  border-radius: 20px;
+  box-shadow: none;
+  margin: 10px;
+  padding: 10px;
+  width: 220px;
+  height: 170px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.spell-details {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: rgba(14, 13, 20, 0.5);
+  color: rgb(246, 246, 246);
+}
+
+.spell-details.show {
+  display: block;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+button.highlighted {
+  color: rgb(70, 174, 65);
+}

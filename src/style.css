@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   background-blend-mode: darken;
 }
@@ -104,4 +105,11 @@ button {
 
 button.highlighted {
   color: rgb(70, 174, 65);
+}
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+      }
+    }
 }

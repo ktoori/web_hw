@@ -10,7 +10,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100%;
   background-blend-mode: darken;
 }
 
@@ -109,7 +109,13 @@ button.highlighted {
 
 @media (max-width: 768px) {
     h1 {
-      font-size: 32px;
+      font-size: 24px;
+      }
+    h2 {
+      font-size: 16px;
+      }
+    h3 {
+      font-size: 16px;
       }
     }
 }
